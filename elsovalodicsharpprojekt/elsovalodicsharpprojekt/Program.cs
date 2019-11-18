@@ -310,7 +310,7 @@ namespace ElsoValodiCharpProjekt
             }*/
 
             //22. Feladat
-            int szam = 0;
+            /*int szam = 0;
             int osszeg = 0;
 
             while (szam <= 10)
@@ -352,7 +352,53 @@ namespace ElsoValodiCharpProjekt
             else
             {
                 return !teljesul;
+            }*/
+
+            // 23. feladat
+            /*string kimenet = "";
+            Console.WriteLine("Kérek egy egész számot: ");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            kimenet += szam + " = ";
+            while (szam % 2 == 0)
+            {
+                kimenet += 2 + " * ";
+                szam /= 2;
             }
+            kimenet += szam;
+            Console.WriteLine(kimenet);
+            Console.ReadKey(true);*/
+
+            // 24. feladat
+            /*string kimenet = "";
+            while (kimenet != "alma");
+            {
+                Console.WriteLine(" Kérek egy almát: ");
+                kimenet = Console.ReadLine();
+            }
+            Console.WriteLine("Az alma egy gyümölcs!");
+            Console.ReadKey(true);*/
+
+
+
+
+            // 25.feladat
+            /*string kimenet = "";
+            Console.WriteLine("Kérek egy egész számot: ");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            int egesz = 0;
+            int tort = szam;
+            kimenet += szam + " = ";
+            while (szam - 3 >= 0)
+            {
+                szam -= 3;
+                egesz++;
+                tort = szam;
+            }
+            kimenet += egesz + " * 3 + " + tort;
+            Console.WriteLine(kimenet);
+            Console.ReadKey(true);*/
+
+
         }		
     }
 }
