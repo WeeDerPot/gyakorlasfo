@@ -46,7 +46,24 @@ namespace egy_tanar_naploja_0210
                     Console.Write($"{tomb[i]}");
                 }
             }
-
+            Console.Write("\nAdj egy számot 50 és 100 között.");
+            int eddig = Int32.Parse(Console.ReadLine());
+            int szamlal = 0;
+            string kiir = "";
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                szamlal += tomb[i];
+                if (szamlal < eddig)
+                {
+                    kiir += $"({tomb[i]}) +";
+                }
+                else
+                {
+                    kiir += $"({tomb[i]}) >= {eddig}";
+                    break;
+                }
+            }
+            Console.WriteLine(kiir);
 
             Console.ReadKey(true);
         }
